@@ -1,7 +1,6 @@
 import source mod from "../dist/output.wasm";
 
 const getWebAssemblyData = () => {
-  // @ts-expect-error -- Not currently supported https://github.com/microsoft/TypeScript/issues/61216
   const datSections = WebAssembly.Module.customSections(mod, "dat");
 
   if (datSections.length === 0) {

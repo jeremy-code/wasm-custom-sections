@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "node ./scripts/compile.ts"
+    "compile": "node ./scripts/compile.ts",
+    "typecheck": "tsc --noEmit"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +24,6 @@
   },
   "devDependencies": {
     "@types/node": "^26.6.5",
-    "typescript": "^7.0.2"
+    "typescript": "7.1.0-beta"
   }
 }
