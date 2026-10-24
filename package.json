@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile": "node ./scripts/compile.ts",
+    "bench": "vitest bench --run",
     "typecheck": "tsc --noEmit"
   },
   "keywords": [],
