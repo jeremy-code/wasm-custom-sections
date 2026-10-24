@@ -2,15 +2,26 @@
   "name": "wasm-custom-sections",
   "version": "1.0.0",
   "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
     "compile": "node ./scripts/compile.ts",
     "bench": "vitest bench --run",
     "typecheck": "tsc --noEmit"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "dependencies": {
+    "binaryen": "^132.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "oxfmt": "^0.74.0",
+    "typescript": "7.1.0-beta"
+  },
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
@@ -18,13 +29,5 @@
       "onFail": "download"
     }
   },
-  "packageManager": "pnpm@12.11.2",
-  "type": "module",
-  "dependencies": {
-    "binaryen": "^132.0.0"
-  },
-  "devDependencies": {
-    "@types/node": "^26.6.5",
-    "typescript": "7.1.0-beta"
-  }
+  "packageManager": "pnpm@12.11.2"
 }
