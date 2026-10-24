@@ -1,44 +1,31 @@
 {
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
-    // File Layout
-    // "rootDir": "./src",
-    // "outDir": "./dist",
+    // Type Checking
+    "exactOptionalPropertyTypes": true,
+    "noUncheckedIndexedAccess": true,
+    "strict": true,
 
-    // Environment Settings
-    // See also https://aka.ms/tsconfig/module
+    // Modules
     "module": "nodenext",
-    "target": "esnext",
-    // For nodejs:
-    "lib": ["esnext", "dom"],
+    "noUncheckedSideEffectImports": true,
+    "rewriteRelativeImportExtensions": true,
     "types": ["node"],
-    // and npm install -D @types/node
 
-    // Other Outputs
-    "sourceMap": true,
+    // Emit
     "declaration": true,
     "declarationMap": true,
+    "sourceMap": true,
 
-    // Stricter Typechecking Options
-    "noUncheckedIndexedAccess": true,
-    "exactOptionalPropertyTypes": true,
-
-    // Style Options
-    // "noImplicitReturns": true,
-    // "noImplicitOverride": true,
-    // "noUnusedLocals": true,
-    // "noUnusedParameters": true,
-    // "noFallthroughCasesInSwitch": true,
-    // "noPropertyAccessFromIndexSignature": true,
-
-    // Recommended Options
-    "strict": true,
-    "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
+    // Interop Constraints
     "isolatedModules": true,
-    "noUncheckedSideEffectImports": true,
+    "verbatimModuleSyntax": true,
+
+    // Language and Environment
     "moduleDetection": "force",
-    "skipLibCheck": true,
-    "rewriteRelativeImportExtensions": true
+    "target": "esnext",
+
+    // Completeness
+    "skipLibCheck": true
   }
 }
